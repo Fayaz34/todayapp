@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block contant %}
+<div class="delete">
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>are you sure complete the task</p>
+        <button class="btn btn-danger" type="submit">delete</button>
+    </form>
+</div>
+
+
+{% endblock contant %}
+
+
